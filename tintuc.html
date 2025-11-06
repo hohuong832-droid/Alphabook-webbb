@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/tintucResponsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.1.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header" class="container-fluid">
+        <!-- header top -->
+        <div class="topbar row">
+          <!-- topbar-left -->
+          <div class="col-lg-6">
+            <div class="topbar_left">
+              <ul>
+                <li class="list-unstyled">
+                  <span style="font-size: 12px"
+                    >Alphabook - Nhà sách online uy tín
+                  </span>
+                  <span style="font-size: 14px"
+                    >Hotline:<b style="color: red"> 0999000000</b></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- topbar-right -->
+          <div class="col-lg-6">
+            <div class="topbar_right">
+              <ul>
+                <li class="list-inline-item list-unstyled">
+                  <a href="#" class="topbar_right-text">Điều khoản</a>
+                  <div class="divider-vertical"></div>
+                </li>
+                <li class="list-inline-item list-unstyled">
+                  <a href="#" class="topbar_right-text">Thanh Toán</a>
+                  <div class="divider-vertical"></div>
+                </li>
+                <li class="list-inline-item list-unstyled">
+                  <a href="#" class="topbar_right-text">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- header main -->
+        <div class="header_main row justify-content-center align-items-center">
+          <!-- header_main-left -->
+          <div class="col-lg-4">
+            <div class="header_main-left">
+              <img
+                class="logo-img"
+                src="./assets/img/logo2.jpg"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <!-- header_main-mid -->
+          <div class="col-lg-6">
+            <form class="bar-seacrh">
+              <input
+                class="btn_input"
+                type="text"
+                placeholder="Bạn muốn mua gì?"
+                name="search"
+              />
+              <button class="btn_icon" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <!-- header_main-right -->
+          <div class="col-lg-2">
+            <div class="header_main-right">
+              <a href="#" class="btn_cart">
+                <span class="btn_cart-title"> Giỏ hàng / 0 đ </span>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--  header bottom-->
+        <div id="header_bottom" class="header_bottom row justify-content-center align-items-center">
+          <!-- header_bottom-left -->
+          <div class="col-lg-5">
+            <div class="header_bottom-left">
+              <i class="fa-solid fa-bars"></i>
+              <div class="dropdown">
+                <button class="dropbtn" >Danh mục sản phẩm</button>
+                <div class="dropdown-content">
+                  <a href="#">Sách kinh doanh</a>
+                  <a href="#">Sách thiếu nhi</a>
+                  <a href="#">Sách tiếng anh</a>
+                  <a href="#">Sách kỹ năng</a>
+                  <a href="#">Sách khởi nghiệp</a>
+                  <a href="#">Sách nuôi dạy con</a>
+                  <a href="#">Văn phòng phẩm</a>
+                  <a href="#">Sách văn học/truyện</a>
+                  <a href="#">Khuyến mãi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header_bottom-center -->
+          <div class="col-lg-7">
+            <div class="header_bottom-center">
+              <ul class="nav">
+                <li><a class="nav_item" href="#">Trang chủ</a></li>
+                <li><a class="nav_item" href="#">Cửa hàng</a></li>
+                <li><a class="nav_item" href="#">Tin tức</a></li>
+                <li><a class="nav_item" href="#">Giới thiệu</a></li>
+                <li><a class="nav_item" href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- header_tablet & header_mobile -->
+          <div class="row header_devices-mediums">
+
+            <div class="col-md-4 col-2">
+            <div class="btn_menu_left" onclick="show_menu1()">
+              <i class="fa-solid fa-bars icon-menu-left"></i>
+            </div>
+            <div class="sibar_menu_left" id="menu1">
+              <div class="bg-all-screen-left" id="maunen1" onclick="hide_menu1()">
+                <a class="close-menu-left" onclick="hide_menu1()" href="#">&times;</a>
+              </div>
+              <ul class="list-unstyled">
+                <li class="sibar-menu-items p-3">
+                  <form class="bar_search-device-medium" action="" >
+                    <input class="bar_search-device-medium-input" type="text" placeholder="bạn muốn mua gì" />
+                    <button class="bar_seacrh-device-medium-icon">
+                      <i
+                        style="color: #fff"
+                        class="fa-solid fa-magnifying-glass"
+                      ></i>
+                    </button>
+                  </form>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Trang chủ</a>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Cửa hàng</a>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Tin tức</a>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Giới thiệu</a>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Liên hệ</a>
+                </li>
+                <li class="sibar-menu-items p-3">
+                  <a href="">Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-8">
+            <div class="menu-center">
+              <img
+                class="img_logo"
+                src="./assets/img/logo2.jpg"
+                alt=""
+              />
+            </div>
+            </div>
+
+            <div class="col-md-4 col-2">
+            <div class="btn_menu-right" onclick="show_menu2()">
+              <i class="fa-solid fa-cart-shopping icon-menu-right"></i>
+            </div>
+            <div class="sibar_menu_right" id="menu2">
+              <a class="close-menu-right" onclick="hide_menu2()"  href="#">&times;</a>
+              <div class="description-cart">
+                <span class="title-cart">GIỎ HÀNG</span>
+                <div class="divider"></div>
+                <span class="status-cart">Chưa có sản phẩm trong giỏ hàng</span>
+              </div>
+              <div class="bg-all-screen-right" id="maunen2" onclick="hide_menu2()">
+              </div>
+          </div>
+            </div>
+          </div> 
+      </header>
+      <div id="main" class="container">
+       <div class="row">
+        <div class="col-lg-9 col-md-12 col-12">
+            <div class="main_left">
+                <div class="news">
+                  <a href="">
+                    <div>
+                      <img class="news_img" src="./assets/img/ga_hang_xom_tinh_nghich (1).jpg" alt="">
+                    </div>
+                    <div class="news_infor">
+                      <h5 class="news_infor-title"> Gã hàng xóm tinh nghịch đã có trên IOS và android</h5>
+                      <span class="news-infor-description">Sau nhiều năm vắng bóng, trò chơi tuổi thơ Neighbours from Hell hay còn gọi [...]</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="news">
+                  <a href="">
+                    <div>
+                      <img class="news_img" src="./assets/img/Samsung_Gear_VR_zing-768x512 (1).jpg" alt="">
+                    </div>
+                    <div class="news_infor">
+                      <h5 class="news_infor-title">Mở hộp Samsung Gear VR 2017 giá 2,5 triệu vơí điều khiển cầm tay</h5>
+                      <span class="news-infor-description"> Samsung Gear VR 2017 được bổ sung điều khiển cầm tay Controller. Thiết kế của [...]</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="news">
+                  <a href="">
+                    <div>
+                      <img class="news_img" src="./assets/img/manhinhvocuc.jpg" alt="">
+                    </div>
+                    <div class="news_infor">
+                      <h5 class="news_infor-title"> Những ứng dụng không ngờ của màn hình vô cực</h5>
+                      <span class="news-infor-description">Màn hình vô cực trên Samsung Galaxy S8 không chỉ khiến máy trông đẹp hơn [...]</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="news">
+                  <a href="">
+                    <div>
+                      <img class="news_img" src="./assets/img/samsung-galaxy-j7-2016_800x450_800x450 (1).jpg" alt="">
+                    </div>
+                    <div class="news_infor">
+                      <h5 class="news_infor-title"> Galaxy J7 (2016) chuẩn bị lên đời Android 7.0 Nougat</h5>
+                      <span class="news-infor-description">Galaxy J7 (2016) có khả năng sẽ được nâng cấp Android 7.0 Nougat trong tương[...]</span>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-12">
+            <div class="main_right">
+                <div class="sidebar1">
+                    <span class="style-title">BÀI VIẾT MỚI</span>
+                    <div class="divider"></div>
+                    <ul>
+                        <li class="new-posts"><a href="#">Gã hàng xóm tinh nghịch đã có trên iOS và Android</a></li>
+                        <li class="new-posts"><a href="#">Mở hộp Samsung Gear VR 2017 giá 2,5 triệu với điều khiển cầm tay</a></li>
+                        <li class="new-posts"><a href="#">Những ứng dụng không ngờ của màn hình vô cực</a></li>
+                        <li class="new-posts"><a href="#">Galaxy J7 (2016) chuẩn bị lên đời Android 7.0 Nougat</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar2">
+                    <span class="title_suggest style-title">CÓ THỂ BẠN SẼ THÍCH</span>
+                    <div class="divider"></div>
+                    <ul class="menu_suggest">
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/luat-tri-nao-100x100.jpg"
+                            alt=""
+                          />
+                          <span class="title-book-suggest">Combo Luật Trí Não</span>
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">249,000 ₫</span></del
+                        >
+                        <span class="price">224,000 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/6-cuon-sach-giup-ban-dam-pha-100x100.png"
+                            alt=""
+                          />
+                          <span class="title-book-suggest"
+                            >6 cuốn sách giúp bạn đàm phán bất cứ điều gì</span
+                          >
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">694,000 ₫</span></del
+                        >
+                        <span class="price">624,000 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/giai-phap-cho-doi-moi-va-sang-tao100x100.jpg"
+                            alt=""
+                          />
+                          <span class="title-book-suggest">Combo Đổi Mới Sáng Tạo</span>
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">457,000 ₫</span></del
+                        >
+                        <span class="price">411,000 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img class="images" src="./assets/img/onefish.jpg" alt="" />
+                          <span class="title-book-suggest"
+                            >Dr. Seuss - One fish, two fish, red fish, blue fish - Môt
+                            cá, hai cá, cá đỏ đỏ, cá xanh xanh</span
+                          >
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">69,010 ₫</span></del
+                        >
+                        <span class="price">55,210 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/nha-lanh-dao-100x100.jpg"
+                            alt=""
+                          />
+                          <span class="title-book-suggest">Nhà Lãnh Đạo 4.0</span>
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">169,000 ₫</span></del
+                        >
+                        <span class="price">135,200 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/bangchucai-100x100.jpg"
+                            alt=""
+                          />
+                          <span class="title-book-suggest"
+                            >Dr. Seuss's A B C - Bảng chữ cái tiếng Anh của Dr.
+                            Seuss</span
+                          >
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">69,010 ₫</span></del
+                        >
+                        <span class="price">55,210 ₫</span>
+                      </li>
+                      <li class="menu_suggest-item">
+                        <a href="">
+                          <img
+                            class="images"
+                            src="./assets/img/bia-le-la-quan-xa-que-nha-100x100.jpg"
+                            alt=""
+                          />
+                          <span class="title-book-suggest">Lê La Quán Xa Quê Nhà</span>
+                        </a>
+                        <del class="dash"
+                          ><span class="price_intinial">99,000 ₫</span></del
+                        >
+                        <span class="price"> 79,200 ₫</span>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </div>
+      </div>
+        <div class="dash-footer"></div>
+      <footer id="footer" class="container mt-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-12">
+            <img
+              src="./assets/img/logo2.jpg"
+              alt=""
+              class="img-logo-footer"
+            />
+            <br />
+            <p>490A, Điện Biên Phủ, P.21, Q.Bình Thạnh</p>
+            <p>Hotline: 0999000000</p>
+            <p>Email: email@gmail.com</p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">GIỚI THIỆU</span>
+            <div class="divider"></div>
+            <ul class="footer_section-page">
+              <li class="footer_section-page-items"><a href="trangchu.html">Trang chủ</a></li>
+              <li class="footer_section-page-items"><a href="cuahang.html">Cửa hàng</a></li>
+              <li class="footer_section-page-items"><a href="tintuc.html">Tin tức</a></li>
+              <li class="footer_section-page-items"><a href="gioithieu.html">Giới thiệu</a></li>
+              <li class="footer_section-page-items"><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">HƯỚNG DẪN, HỖ TRỢ</span>
+            <div class="divider"></div>
+            <ul class="footer_section-policy">
+              <li class="footer_section-policy-items">
+                <a href="">Điều khoản sử dụng</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách vận chuyển</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách đổi hoàn tiền</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách thanh toán</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách bảo mật</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">FANPAGE FACEBOOK</span>
+            <div class="divider"></div>
+            <ul class="footer_section-facebook">
+              <li class="footer_section-facebook-items">
+                <a href="">nhóm sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script>
+        // ẩn hiện danh mục sản phẩm
+        $(".dropbtn").click(function(){
+          $(".dropdown-content").toggle();
+        });
+      
+        // ẩn hiện menu điện thoại và máy tính bảng
+        function show_menu1() {
+          document.getElementById("menu1").style.left = "0px";
+          document.getElementById("maunen1").style.right = "0px";
+        }
+        function hide_menu1() {
+          document.getElementById("menu1").style.left = "-100%";
+          document.getElementById("maunen1").style.right = "-100%";
+        }
+        function show_menu2() {
+          document.getElementById("menu2").style.right = "0px";
+          document.getElementById("maunen2").style.left = "0px";
+        }
+        function hide_menu2() {
+          document.getElementById("menu2").style.right = "-100%";
+          document.getElementById("maunen2").style.left = "-100%";
+        }
+        // dính navbar lên cùng khi cuộn lên
+        window.onscroll = function() {myFunction()};
+
+          var main = document.getElementById("main");// truy xuất đến phần tử có id là main
+          var sticky = main.offsetTop;// lấy khoảng cách từ trên đầu trình duyệt đến mép trên của phần tử có id là main gán cho bằng biến sticky
+        function myFunction() {
+          // pageYOffset là khoảng cách theo chiều dọc tính từ trên đầu trình duyệt đến mép trên của thanh cuộn gióng qua-thanh cuộn có thể kéo lên xuống
+           if (window.pageYOffset >= sticky) {//
+             header_bottom.classList.add("sticky")// thêm class sticky cho header_bottom
+          } else {
+           header_bottom.classList.remove("sticky"); //xóa class sticky cho header_bottom
+          }
+        }
+      </script>
+  </body>
+</html>

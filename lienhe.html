@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/lienhe.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/lienheResposive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.1.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="container-fluid">
+      <!-- header top -->
+      <div class="topbar row">
+        <!-- topbar-left -->
+        <div class="col-lg-6">
+          <div class="topbar_left">
+            <ul>
+              <li class="list-unstyled">
+                <span style="font-size: 12px"
+                  >Alphabook - Nhà sách online uy tín
+                </span>
+                <span style="font-size: 14px"
+                  >Hotline:<b style="color: red"> 0999000000</b></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- topbar-right -->
+        <div class="col-lg-6">
+          <div class="topbar_right">
+            <ul>
+              <li class="list-inline-item list-unstyled">
+                <a href="#" class="topbar_right-text">Điều khoản</a>
+                <div class="divider-vertical"></div>
+              </li>
+              <li class="list-inline-item list-unstyled">
+                <a href="#" class="topbar_right-text">Thanh Toán</a>
+                <div class="divider-vertical"></div>
+              </li>
+              <li class="list-inline-item list-unstyled">
+                <a href="#" class="topbar_right-text">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main -->
+      <div class="header_main row justify-content-center align-items-center">
+        <!-- header_main-left -->
+        <div class="col-lg-4">
+          <div class="header_main-left">
+            <img class="logo-img" src="./assets/img/logo2.jpg" alt="logo" />
+          </div>
+        </div>
+        <!-- header_main-mid -->
+        <div class="col-lg-6">
+          <form class="bar-seacrh">
+            <input
+              class="btn_input"
+              type="text"
+              placeholder="Bạn muốn mua gì?"
+              name="search"
+            />
+            <button class="btn_icon" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <!-- header_main-right -->
+        <div class="col-lg-2">
+          <div class="header_main-right">
+            <a href="#" class="btn_cart">
+              <span class="btn_cart-title"> Giỏ hàng / 0 đ </span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--  header bottom-->
+      <div class="header_bottom row justify-content-center align-items-center">
+        <!-- header_bottom-left -->
+        <div class="col-lg-5">
+          <div class="header_bottom-left">
+            <i class="fa-solid fa-bars"></i>
+            <div class="dropdown">
+              <button class="dropbtn">Danh mục sản phẩm</button>
+              <div class="dropdown-content">
+                <a href="#">Sách kinh doanh</a>
+                <a href="#">Sách thiếu nhi</a>
+                <a href="#">Sách tiếng anh</a>
+                <a href="#">Sách kỹ năng</a>
+                <a href="#">Sách khởi nghiệp</a>
+                <a href="#">Sách nuôi dạy con</a>
+                <a href="#">Văn phòng phẩm</a>
+                <a href="#">Sách văn học/truyện</a>
+                <a href="#">Khuyến mãi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header_bottom-center -->
+        <div class="col-lg-7">
+          <div class="header_bottom-center">
+            <ul class="nav">
+              <li><a class="nav_item" href="#">Trang chủ</a></li>
+              <li><a class="nav_item" href="#">Cửa hàng</a></li>
+              <li><a class="nav_item" href="#">Tin tức</a></li>
+              <li><a class="nav_item" href="#">Giới thiệu</a></li>
+              <li><a class="nav_item" href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- header_tablet & header_mobile -->
+      <div class="row header_devices-mediums">
+        <div class="col-md-4 col-2">
+          <div class="btn_menu_left" onclick="show_menu1()">
+            <i class="fa-solid fa-bars icon-menu-left"></i>
+          </div>
+          <div class="sibar_menu_left" id="menu1">
+            <div class="bg-all-screen-left" id="maunen1" onclick="hide_menu1()">
+              <a class="close-menu-left" onclick="hide_menu1()" href="#"
+                >&times;</a
+              >
+            </div>
+            <ul class="list-unstyled">
+              <li class="sibar-menu-items pl-2 pb-2">
+                <form class="bar_search-device-medium" action="">
+                  <input
+                    class="bar_search-device-medium-input"
+                    type="text"
+                    placeholder="bạn muốn mua gì"
+                  />
+                  <button class="bar_seacrh-device-medium-icon">
+                    <i
+                      style="color: #fff"
+                      class="fa-solid fa-magnifying-glass"
+                    ></i>
+                  </button>
+                </form>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Trang chủ</a>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Cửa hàng</a>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Tin tức</a>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Giới thiệu</a>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Liên hệ</a>
+              </li>
+              <li class="sibar-menu-items p-3">
+                <a href="">Đăng nhập</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-8">
+          <div class="menu-center">
+            <img class="img_logo" src="./assets/img/logo2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-2">
+          <div class="btn_menu-right" onclick="show_menu2()">
+            <i class="fa-solid fa-cart-shopping icon-menu-right"></i>
+          </div>
+          <div class="sibar_menu_right" id="menu2">
+            <a class="close-menu-right" onclick="hide_menu2()" href="#"
+              >&times;</a
+            >
+            <div class="description-cart">
+              <span class="title-cart">GIỎ HÀNG</span>
+              <div class="divider"></div>
+              <span class="status-cart">Chưa có sản phẩm trong giỏ hàng</span>
+            </div>
+            <div
+              class="bg-all-screen-right"
+              id="maunen2"
+              onclick="hide_menu2()"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container mb-5 p-0">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="main_left">
+            <img src="./assets/img/s1 (1).jpg" alt="" class="banner1" />
+            <img src="./assets/img/banner2.jpg" alt="" class="banner2" />
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-12">
+          <div class="main_right">
+            <!-- form liên hệ -->
+            <form class="form" method="post" id="submit_form">
+              <!--Tên của bạn-->
+              <div class="form-group">
+                <label for="" class="form-label">Tên của bạn (bắt buộc)</label>
+                <input name="fullname" type="text" class="enter-your-name" />
+                <span class="form-message"></span>
+              </div>
+              <!-- Địa chỉ email -->
+              <div class="form-group">
+                <label for="" class="form-label">Địa chỉ Email (bắt buộc)</label>
+                <input name="email" type="text" class="enter-your-email" />
+                <span class="form-message"></span>
+              </div>
+              <!-- tiêu đề  -->
+              <div class="form-group">
+                <label for="" class="form-label">Tiêu đề:</label>
+                <input name="title" type="text" class="enter-your-title" />
+                <span class="form-message"></span>
+              </div>
+              <!-- thông điệp cần gửi -->
+              <div class="form-group">
+                <label for="" class="form-label">Thông điệp</label>
+                <input name="message" type="text" class="enter-your-message" />
+                <span class="form-message"></span>
+              </div>
+              <div>
+                <input type="submit" value="GỬI ĐI" id="form_submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="dash-footer">
+      <div class="container pt-2" >
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-12">
+            <img src="./assets/img/logo2.jpg" alt="" class="img-logo-footer" />
+            <br />
+            <p>490A, Điện Biên Phủ, P.21, Q.Bình Thạnh</p>
+            <p>Hotline: 0999000000</p>
+            <p>Email: email@gmail.com</p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">GIỚI THIỆU</span>
+            <div class="divider"></div>
+            <ul class="footer_section-page">
+              <li class="footer_section-page-items"><a href="trangchu.html">Trang chủ</a></li>
+              <li class="footer_section-page-items"><a href="cuahang.html">Cửa hàng</a></li>
+              <li class="footer_section-page-items"><a href="tintuc.html">Tin tức</a></li>
+              <li class="footer_section-page-items"><a href="gioithieu.html">Giới thiệu</a></li>
+              <li class="footer_section-page-items"><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">HƯỚNG DẪN, HỖ TRỢ</span>
+            <div class="divider"></div>
+            <ul class="footer_section-policy">
+              <li class="footer_section-policy-items">
+                <a href="">Điều khoản sử dụng</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách vận chuyển</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách đổi hoàn tiền</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách thanh toán</a>
+              </li>
+              <li class="footer_section-policy-items">
+                <a href="">Chính sách bảo mật</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-12">
+            <span class="style-title">FANPAGE FACEBOOK</span>
+            <div class="divider"></div>
+            <ul class="footer_section-facebook">
+              <li class="footer_section-facebook-items">
+                <a href="">nhóm sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // gửi form
+      document.querySelector('#submit_form').onsubmit = function(e){
+        e.preventDefault();
+        
+
+        // truy cập vào thành phần HTML tương ứng
+        let fullNameOj = document.querySelector('input[name="fullname"]');
+
+        let emailOj = document.querySelector('input[name="email"]');
+
+        let titleOj = document.querySelector('input[name="title"]');
+
+        let messageOj = document.querySelector('input[name="message"]');
+        
+        // lấy giá trị ngươì dùng nhập vào
+        let fullName = fullNameOj.value;
+        let email = emailOj.value;
+        let title = titleOj.value;
+        let message = messageOj.value;
+
+        // validate form
+
+        // reset thông báo
+        let requiredOj = document.querySelectorAll('.form-message');
+        if(requiredOj.length>0){
+          requiredOj.forEach(function(item) {
+            item.innerText='';
+          })
+        }
+
+        let errors = {};
+
+        if(fullName.trim()==''){
+          errors['fullName'] = 'Họ và tên không được để trống';
+          fullNameOj.parentElement.querySelector('.form-message').innerText = errors['fullName'];
+        }
+        if(email.trim()==''){
+          errors['email'] = 'Email không được để trống';
+          emailOj.parentElement.querySelector('.form-message').innerText = errors['email'];
+        }
+        if(title.trim()==''){
+          errors['title'] = 'Tiêu đề không được để trống';
+          titleOj.parentElement.querySelector('.form-message').innerText = errors['title'];
+        }
+        if(message.trim()==''){
+          errors['message'] = 'Thông điệp không được để trống';
+          messageOj.parentElement.querySelector('.form-message').innerText = errors['message'];
+        }
+        
+      }
+      // ẩn hiện danh mục sản phẩm
+      $(".dropbtn").click(function () {
+        $(".dropdown-content").toggle();
+      });
+
+      // ẩn hiện menu điện thoại và máy tính bảng
+      function show_menu1() {
+        document.getElementById("menu1").style.left = "0px";
+        document.getElementById("maunen1").style.right = "0px";
+      }
+      function hide_menu1() {
+        document.getElementById("menu1").style.left = "-100%";
+        document.getElementById("maunen1").style.right = "-100%";
+      }
+      function show_menu2() {
+        document.getElementById("menu2").style.right = "0px";
+        document.getElementById("maunen2").style.left = "0px";
+      }
+      function hide_menu2() {
+        document.getElementById("menu2").style.right = "-100%";
+        document.getElementById("maunen2").style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>
